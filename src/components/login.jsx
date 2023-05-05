@@ -4,33 +4,9 @@ import loginImg from '../assets/login.jpg'
 
 export default function Login() {
     return (
-        // <div classname='grid grid-cols-1 sm:grid-cols-2 h-screen w-full'>
-        // <div clssName ='hidden sm:block'>
-        //     <img className='w-full h-full object-cover' src={loginImg} alt=""/>
-        //     </div>
-        //     <div className= 'bg-gray-100 flex flex-cal justify-center'>
-        //         <form className = 'max-w-[400px] w-full mx-auto bg-white p-4 '>
-        //             <h2 className='text-4xl font-bold text-center py-6'>IOE APP</h2>
-        //             <div classname='flex flex-col py-2'>
-        //                 <label >Username</label>
-        //                 <input className='border p-2' type="text" />
+       
 
-        //             </div>
-        //             <div className='flex flex-col py-2'>
-        //                 <label >Password</label>
-        //                 <input className='border p-2' type="password" />
-        //                 <button className='border w-full ny-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white'>Sign In</button>
-        //                 <div className='flex justify-between'>
-        //                     <p className='flex items-center' ><input className='mr-2' type="checkbox" /> Remember Me</p>
-        //                     <p>Create an account</p>
-        //                 </div>
-
-        //             </div>
-        //         </form>
-        //     </div>
-        // </div>
-
-        <section className="bg-gray-50 dark:bg-gray-900">
+        <section className="bg-blue-50 dark:bg-red-900">
             <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
                 <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
     
@@ -44,7 +20,7 @@ export default function Login() {
                         <form className="space-y-4 md:space-y-6" action="#">
                             <div>
                                 <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-                                <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required="" />
+                                <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@gmail.com" required="" />
                             </div>
                             <div>
                                 <label for="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
@@ -61,7 +37,22 @@ export default function Login() {
                                 </div>
                                 <a href="#" className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">Forgot password?</a>
                             </div>
-                            <button type="submit" className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign in</button>
+                            {/* <button type="submit" className="w-full text-white bg-blue hover:bg-primary-700 focus:ring-4 
+                            focus:outline-none focus:ring-primary-300 
+                            font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue
+                             dark:hover:bg-white dark:focus:yellow">Sign in</button> */}
+                            
+                            
+                            <div class="w-full flex justify-center items-center">
+  <div class="bg-blue-500 rounded-lg px-5 py-2.5">
+    <button type="submit" class="w-full text-black font-medium text-sm focus:outline-red">
+      Log in
+    </button>
+  </div>
+</div>
+
+                            
+                            
                             <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                                 Don’t have an account yet? <a href="#" className="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</a>
                             </p>
